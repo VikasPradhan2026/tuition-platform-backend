@@ -22,6 +22,8 @@ app.get('/health', async (req, res) => {
 app.use('/api/auth', authRoutes);
 const adminRoutes = require('./routes/admin');
 const courseRoutes = require('./routes/courses');
+const enrollmentRoutes = require('./routes/enrollments');
+app.use('/api/enrollments', enrollmentRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/courses', courseRoutes);
 
