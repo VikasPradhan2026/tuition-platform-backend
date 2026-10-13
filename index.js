@@ -24,6 +24,8 @@ const adminRoutes = require('./routes/admin');
 const courseRoutes = require('./routes/courses');
 const enrollmentRoutes = require('./routes/enrollments');
 const teacherRoutes = require('./routes/teacher');
+const attendanceRoutes = require('./routes/attendance');
+app.use('/api/attendance', attendanceRoutes);
 app.use('/api/teacher', teacherRoutes);
 app.use('/api/enrollments', enrollmentRoutes);
 app.use('/api/admin', adminRoutes);
